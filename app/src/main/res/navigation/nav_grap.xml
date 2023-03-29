@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/frmInicio">
+
+    <fragment
+        android:id="@+id/frmInicio"
+        android:name="com.example.myuca_kevin.FrmInicio"
+        android:label="fragment_frm_inicio"
+        tools:layout="@layout/fragment_frm_inicio" >
+        <action
+            android:id="@+id/action_frmInicio_to_frmMostrarCoor"
+            app:destination="@id/frmMostrarCoor" />
+    </fragment>
+    <fragment
+        android:id="@+id/frmMostrarCoor"
+        android:name="com.example.myuca_kevin.FrmMostrarCoor"
+        android:label="fragment_frm_mostrar_coor"
+        tools:layout="@layout/fragment_frm_mostrar_coor" >
+        <action
+            android:id="@+id/action_frmMostrarCoor_to_frmInsertar"
+            app:destination="@id/frmInsertar" />
+        <action
+            android:id="@+id/action_frmMostrarCoor_to_frmSeleccionar"
+            app:destination="@id/frmSeleccionar" />
+        <argument
+            android:name="ip"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/frmInsertar"
+        android:name="com.example.myuca_kevin.FrmInsertar"
+        android:label="fragment_frm_insertar"
+        tools:layout="@layout/fragment_frm_insertar" >
+        <argument
+            android:name="ip"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/frmSeleccionar"
+        android:name="com.example.myuca_kevin.FrmSeleccionar"
+        android:label="fragment_frm_seleccionar"
+        tools:layout="@layout/fragment_frm_seleccionar" >
+        <argument
+            android:name="idC"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_frmSeleccionar_to_frmMostrarCoor"
+            app:destination="@id/frmMostrarCoor" />
+        <argument
+            android:name="ip"
+            app:argType="string" />
+    </fragment>
+</navigation>

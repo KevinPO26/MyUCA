@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FrmInsertar">
+
+    <TextView
+        android:id="@+id/tvNombresText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombres:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <EditText
+        android:id="@+id/etNombresC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Raquel del Rosoario"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvNombresText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/tvApellidosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombresText"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/etApellidosC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Salva Trujillo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvApellidosText"
+        app:layout_constraintTop_toBottomOf="@+id/etNombresC"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/tvFechaNacText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha Nacimiento:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidosText"
+        app:layout_constraintVertical_bias="0.084" />
+    <EditText
+        android:id="@+id/etFechaNacC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2000-09-12"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvFechaNacText"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidosC"
+        app:layout_constraintVertical_bias="0.050000012"
+        />
+
+    <TextView
+        android:id="@+id/tvEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloText"
+        app:layout_constraintVertical_bias="0.095" />
+    <EditText
+        android:id="@+id/etEmailC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="salva@gmail.com"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/etTituloC"
+        app:layout_constraintVertical_bias="0.050000012"
+        />
+
+    <TextView
+        android:id="@+id/tvFacultadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facultad:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailText"
+        app:layout_constraintVertical_bias="0.1" />
+    <EditText
+        android:id="@+id/etFacultadC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Medicina"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvFacultadText"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailC"
+        app:layout_constraintVertical_bias="0.050000012"
+        />
+
+    <TextView
+        android:id="@+id/tvTituloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaNacText"
+        app:layout_constraintVertical_bias="0.09" />
+    <EditText
+        android:id="@+id/etTituloC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MSC, LIC, ING"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/tvTituloText"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaNacC"
+        app:layout_constraintVertical_bias="0.050000012"
+        />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFacultadText" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/tvFacultadText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
